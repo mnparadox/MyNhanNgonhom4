@@ -114,7 +114,7 @@
         </tr>
     </table>
 
-    <table class="donate-table">
+<table class="donate-table">
         <thead>
             <tr>
                 <th colspan="2">Donate cho Mỹ Nhàn</th>
