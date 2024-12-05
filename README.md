@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Donate Mỹ Nhàn</title>
-<style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Mỹ Nhàn</title>
+    <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -109,7 +109,12 @@
         <tr>
             <td colspan="2">
                 <h2>Giới thiệu bản thân</h2>
-                <p align="justify">Chào các bạn của bảnh nha. Bảnh là Nhàn nè. Bảnh ở Bến Tre đang học lớp 12 Lý tại CBT. Bảnh thích đi ngủ lắm với bảnh thích ăn bún đậu mắm tôm thích đi du lịch nữa. Dạo gần đây điện thoại bảnh bị hư mà không có tiền mua mới ai có lòng có thể donate qua 0918167809 BIDV nha. Cảm ơn mọi người!</p>
+                <p align="justify">
+                    Chào các bạn của bảnh nha. Bảnh là Nhàn nè. Bảnh ở Bến Tre đang học lớp 12 Lý tại CBT.
+                    Bảnh thích đi ngủ lắm với bảnh thích ăn bún đậu mắm tôm thích đi du lịch nữa. Dạo gần đây
+                    điện thoại bảnh bị hư mà không có tiền mua mới ai có lòng có thể donate qua 0918167809 BIDV nha. 
+                    Cảm ơn mọi người!
+                </p>
             </td>
         </tr>
     </table>
