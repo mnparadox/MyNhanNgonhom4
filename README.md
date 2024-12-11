@@ -1,68 +1,215 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <table>
-        <tr>
-            <td colspan="2">
-                <img src="17fc8f901ec1a49ffdd0.jpg" alt="Image of Mỹ Nhàn">
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <h2>Tóm tắt tiểu sử Mỹ Nhàn</h2>
-                <ul>
-                    <li>Họ tên: Ngô Mỹ Nhàn</li>
-                    <li>Ngày sinh: 11/06/2007</li>
-                    <li>Quê quán: Tp.Bến Tre, Bến Tre</li>
-                    <li>Cung hoàng đạo: Song Tử</li>
-                    <li>Học tại: Trường THPT Chuyên Bến Tre</li>
-                    <li>Sở thích: Tiêu tiền</li>
-                    <li>Ước mơ: Mua nhà trên Đà Lạt</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <h2>Giới thiệu bản thân</h2>
-                <p align="justify">
-                    Chào các bạn của bảnh nha. Bảnh là Nhàn nè. Bảnh ở Bến Tre đang học lớp 12 Lý tại CBT.
-                    Bảnh thích đi ngủ lắm với bảnh thích ăn bún đậu mắm tôm thích đi du lịch nữa. Dạo gần đây
-                    điện thoại bảnh bị hư mà không có tiền mua mới ai có lòng có thể donate qua 0918167809 BIDV nha. 
-                    Cảm ơn mọi người!
-                </p>
-            </td>
-        </tr>
-    </table>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Scrolling Text</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  .scrolling-text {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 10px 0;
+  position: relative;
+}
 
-<table class="donate-table">
-        <thead>
-            <tr>
-                <th colspan="2">Donate cho Mỹ Nhàn</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Họ và Tên:</td>
-                <td><input type="text" name="name" placeholder="Nhập tên của bạn" required></td>
-            </tr>
-            <tr>
-                <td>Email:</td>
-                <td><input type="email" name="email" placeholder="Nhập email của bạn" required></td>
-            </tr>
-            <tr>
-                <td>Số tiền (VNĐ):</td>
-                <td><input type="number" name="amount" placeholder="Nhập số tiền" min="1000" required></td>
-            </tr>
-            <tr>
-                <td colspan="2" style="text-align: center;">
-                    <button type="submit">Donate ngay</button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+.scrolling-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #4CAF50 0%, rgba(76, 175, 80, 0) 100%);
+  z-index: 1;
+}
+
+.scrolling-text span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scrollText 10s linear infinite;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+  
+  h1 {
+        display: none;
+    }
+
+  header {
+    text-align: center;
+    background-color: #4CAF50;
+    padding: 20px;
+    color: white;
+  }
+  header img {
+    width: 100%;
+    height: auto;
+  }
+
+  .nav-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+  }
+
+  .member {
+    text-align: center;
+  }
+    .member a {
+    text-decoration: none;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: #f2f2f2;
+    border: 2px solid #4CAF50;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+
+  .member a:hover {
+    transform: scale(1.1);
+    background-color: #4CAF50;
+  }
+
+  .member img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .member p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+
+  .donate-form {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+ .donate-form input, .donate-form button {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .donate-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .donate-form button:hover {
+    background-color: #45a049;
+  }
+</style>
+
+<body>
+<div class="scrolling-text">
+  Chào mừng bạn đến với nhóm 4 - Hãy cùng chúng tôi học tập và phát triển!
+</div>
+
+<header>
+  <h1>CHÀO MỪNG ĐẾN VỚI NHÓM 4</h1>
+   <img src="Bannerreal.jpg" alt="Nhóm 4 Banner">
+</header>
+<div class="nav-icons">
+  <div class="member">
+    <a href="https://mnparadox.github.io/NgocNgannhom4/" title="Phạm Ngọc Ngân">
+      <img src="NgocNgan.jpg" alt="Ngọc Ngân">
+    </a>
+    <p>Phạm Ngọc Ngân</p>
+  </div>
+  <div class="member">
+    <a href="https://phamngocngan527.github.io/kimnguyen.github.io/" title="Lữ Ngọc Kim Nguyên">
+      <img src="KimNguyen.jpg" alt="Kim Nguyên">
+    </a>
+    <p>Lữ Ngọc Kim Nguyên</p>
+  </div>
+  <div class="member">
+    <a href="https://mnparadox.github.io/MyNhanNgonhom4/" title="Ngô Mỹ Nhàn">
+      <img src="MyNhan.jpg" alt="Mỹ Nhàn">
+    </a>
+    <p>Ngô Mỹ Nhàn</p>
+  </div>
+  <div class="member">
+    <a href="https://phamngocngan527.github.io/th-nhhieu.github.io/" title="Nguyễn Thành Hiếu">
+      <img src="ThanHieu.jpg" alt="Thành Hiếu">
+    </a>
+    <p>Nguyễn Thành Hiếu</p>
+  </div>
+</div>
+
+<section>
+  <h2>Giới thiệu về Nhóm 4</h2>
+  <p>
+    Nhóm 4 là một đội ngũ gồm bốn thành viên tài năng và nhiệt huyết: 
+    Phạm Ngọc Ngân, Lữ Ngọc Kim Nguyên, Ngô Mỹ Nhàn, và Nguyễn Thành Hiếu. 
+    Chúng tôi đến từ lớp 12 Lý của trường THPT Chuyên Bến Tre và cùng nhau xây dựng trang web này với mục đích:
+  </p>
+  <ul>
+    <li>Chia sẻ thông tin học tập và kinh nghiệm thú vị từ các thành viên.</li>
+    <li>Tạo nền tảng kết nối và giao lưu giữa học sinh trong trường.</li>
+    <li>Gây quỹ để thực hiện các dự án học tập và hoạt động xã hội.</li>
+  </ul>
+  <p>
+     Trang web này không chỉ là nơi để mọi người tham khảo thông tin về nhóm, mà còn là một biểu tượng cho sự đoàn kết, sáng tạo và nỗ lực không ngừng. 
+    Nhóm 4 cam kết mang lại giá trị thiết thực và khích lệ tinh thần học tập trong cộng đồng học sinh.
+  </p>
+</section>
+
+<section>
+  <h2>Donate Cho Nhóm 4</h2>
+  <form class="donate-form">
+    <label for="name">Họ và Tên:</label>
+    <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
+
+    <label for="amount">Số tiền (VNĐ):</label>
+    <input type="number" id="amount" name="amount" placeholder="Nhập số tiền" min="1000" required>
+
+    <button type="submit">Donate ngay</button>
+  </form>
+   <p align="center">Số tài khoản nhận tiền: <b>0918167809</b> - BIDV</p>
+</section>
+
 </body>
 </html>
+
