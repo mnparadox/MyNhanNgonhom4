@@ -8,7 +8,7 @@
     <table width="60%" align="center" border="1" cellspacing="0" cellpadding="10">
         <tr>
             <td colspan="2" align="center">
-                <img src="0379da155b44e11ab855.jpg" alt="Image" width="100%">
+                <img src="17fc8f901ec1a49ffdd0.jpg" alt="Image" width="100%">
             </td>
         </tr>
         <tr>
