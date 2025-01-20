@@ -1,215 +1,51 @@
+<!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <title>Scrolling Text</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-  }
-  .scrolling-text {
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  box-sizing: border-box;
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  padding: 10px 0;
-  position: relative;
-}
-
-.scrolling-text::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: linear-gradient(to right, #4CAF50 0%, rgba(76, 175, 80, 0) 100%);
-  z-index: 1;
-}
-
-.scrolling-text span {
-  display: inline-block;
-  padding-left: 100%;
-  animation: scrollText 10s linear infinite;
-}
-
-@keyframes scrollText {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-  
-  h1 {
-        display: none;
-    }
-
-  header {
-    text-align: center;
-    background-color: #4CAF50;
-    padding: 20px;
-    color: white;
-  }
-  header img {
-    width: 100%;
-    height: auto;
-  }
-
-  .nav-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin: 20px 0;
-  }
-
-  .member {
-    text-align: center;
-  }
-    .member a {
-    text-decoration: none;
-    display: inline-block;
-    width: 80px;
-    height: 80px;
-    background-color: #f2f2f2;
-    border: 2px solid #4CAF50;
-    border-radius: 50%;
-    overflow: hidden;
-    transition: transform 0.3s, background-color 0.3s;
-  }
-
-  .member a:hover {
-    transform: scale(1.1);
-    background-color: #4CAF50;
-  }
-
-  .member img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .member p {
-    margin-top: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #333;
-  }
-
-  section {
-    padding: 20px;
-    margin: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-  }
-
-  .donate-form {
-    width: 50%;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-  }
- .donate-form input, .donate-form button {
-    width: calc(100% - 22px);
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-
-  .donate-form button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-
-  .donate-form button:hover {
-    background-color: #45a049;
-  }
-</style>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 <body>
-<div class="scrolling-text">
-  Chào mừng bạn đến với nhóm 4 - Hãy cùng chúng tôi học tập và phát triển!
-</div>
-
-<header>
-  <h1>CHÀO MỪNG ĐẾN VỚI NHÓM 4</h1>
-   <img src="Bannerreal.jpg" alt="Nhóm 4 Banner">
-</header>
-<div class="nav-icons">
-  <div class="member">
-    <a href="https://mnparadox.github.io/NgocNgannhom4/" title="Phạm Ngọc Ngân">
-      <img src="NgocNgan.jpg" alt="Ngọc Ngân">
-    </a>
-    <p>Phạm Ngọc Ngân</p>
-  </div>
-  <div class="member">
-    <a href="https://phamngocngan527.github.io/kimnguyen.github.io/" title="Lữ Ngọc Kim Nguyên">
-      <img src="KimNguyen.jpg" alt="Kim Nguyên">
-    </a>
-    <p>Lữ Ngọc Kim Nguyên</p>
-  </div>
-  <div class="member">
-    <a href="https://mnparadox.github.io/MyNhanNgonhom4/" title="Ngô Mỹ Nhàn">
-      <img src="MyNhan.jpg" alt="Mỹ Nhàn">
-    </a>
-    <p>Ngô Mỹ Nhàn</p>
-  </div>
-  <div class="member">
-    <a href="https://phamngocngan527.github.io/th-nhhieu.github.io/" title="Nguyễn Thành Hiếu">
-      <img src="ThanHieu.jpg" alt="Thành Hiếu">
-    </a>
-    <p>Nguyễn Thành Hiếu</p>
-  </div>
-</div>
-
-<section>
-  <h2>Giới thiệu về Nhóm 4</h2>
-  <p>
-    Nhóm 4 là một đội ngũ gồm bốn thành viên tài năng và nhiệt huyết: 
-    Phạm Ngọc Ngân, Lữ Ngọc Kim Nguyên, Ngô Mỹ Nhàn, và Nguyễn Thành Hiếu. 
-    Chúng tôi đến từ lớp 12 Lý của trường THPT Chuyên Bến Tre và cùng nhau xây dựng trang web này với mục đích:
-  </p>
-  <ul>
-    <li>Chia sẻ thông tin học tập và kinh nghiệm thú vị từ các thành viên.</li>
-    <li>Tạo nền tảng kết nối và giao lưu giữa học sinh trong trường.</li>
-    <li>Gây quỹ để thực hiện các dự án học tập và hoạt động xã hội.</li>
-  </ul>
-  <p>
-     Trang web này không chỉ là nơi để mọi người tham khảo thông tin về nhóm, mà còn là một biểu tượng cho sự đoàn kết, sáng tạo và nỗ lực không ngừng. 
-    Nhóm 4 cam kết mang lại giá trị thiết thực và khích lệ tinh thần học tập trong cộng đồng học sinh.
-  </p>
-</section>
-
-<section>
-  <h2>Donate Cho Nhóm 4</h2>
-  <form class="donate-form">
-    <label for="name">Họ và Tên:</label>
-    <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" required>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
-
-    <label for="amount">Số tiền (VNĐ):</label>
-    <input type="number" id="amount" name="amount" placeholder="Nhập số tiền" min="1000" required>
-
-    <button type="submit">Donate ngay</button>
-  </form>
-   <p align="center">Số tài khoản nhận tiền: <b>0918167809</b> - BIDV</p>
-</section>
-
+    <table width="60%" align="center" border="1" cellspacing="0" cellpadding="10">
+        <tr>
+            <td colspan="2" align="center">
+                <img src="0379da155b44e11ab855.jpg" alt="Image" width="100%">
+            </td>
+        </tr>
+        <tr>
+            <tr>
+            <td colspan="2" align="center">
+                <iframe width="100%" height="315" src="790695121580062924.mp4" frameborder="0" allowfullscreen></iframe>
+            </td>
+        </tr>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <h2>Tóm tắt tiểu sử Ngọc Ngân</h2>
+                <ul>
+                    <li>Họ tên: Phạm Ngọc Ngân</li>
+                    <li>Ngày sinh: 05/02/2007</li>
+                    <li>Quê quán: Bình Đại, Bến Tre</li>
+                    <li>Cung hoàng đạo: Bảo Bình</li>
+                    <li>Học tại: Trường THPT Chuyên Bến Tre</li>
+                    <li>Sở thích: uống trà sữa có trân châu, củ năng, bánh plan</li>
+                    <li>Ước mơ: có một cuộc sống bình yên</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <h2>Giới thiệu bản thân</h2>
+                <p align="justify">
+                    Chào mọi người! Sau đây em xin tự giới thiệu về bản thân mình. Em tên là Phạm Ngọc Ngân. 
+                    Em sinh ra và lớn lên tại Bến Tre. Hiện nay em đang theo học tại trường THPT Chuyên Bến Tre. 
+                    Em là học sinh lớp 12 Lý. Mẹ em là một giáo viên tiểu học. Mẹ rất hiền dịu và xinh xắn. 
+                    Mẹ em rất đảm đang, vừa giỏi việc nhà vừa giỏi việc trên trường. Gia đình em còn một người em trai. 
+                    Em trai em hiện đang học lớp 8. Anh trai em rất hiền và tốt bụng. Em rất tự hào khi có người em như vậy. 
+                    Em rất tích cực trong việc tổ chức các hoạt động tình nguyện, chung tay xây dựng một môi trường lành mạnh, xanh, sạch, đẹp.
+                </p>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
-
