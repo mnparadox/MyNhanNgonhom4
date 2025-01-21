@@ -1,11 +1,9 @@
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <table width="60%" align="center" border="1" cellspacing="0" cellpadding="10">
-        <tr>
+    <tr>
             <td colspan="2" align="center">
                 <img src="17fc8f901ec1a49ffdd0.jpg" alt="Image" width="100%">
             </td>
