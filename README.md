@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,14 +8,6 @@
         <tr>
             <td colspan="2" align="center">
                 <img src="17fc8f901ec1a49ffdd0.jpg" alt="Image" width="100%">
-            </td>
-        </tr>
-        <tr>
-            <tr>
-            <td colspan="2" align="center">
-                <iframe width="100%" height="315" src="790695121580062924.mp4" frameborder="0" allowfullscreen></iframe>
-            </td>
-        </tr>
             </td>
         </tr>
         <tr>
