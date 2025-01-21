@@ -28,8 +28,5 @@
                 <p align="justify">
                     Hi mình là Nhàn nha, mình thích đi du lịch muốn mở farm trên Đà Lạt, thân thiện, đáng yêu và anti hoá học =))
                 </p>
-            </td>
-        </tr>
-    </table>
 </body>
 </html>
